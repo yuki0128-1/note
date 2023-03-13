@@ -1,13 +1,13 @@
 {
   "name": "noteapp-with-react",
-  "homepage":"https://yuki0128-1.github.io/noteapp",
+  "homepage": "https://yuki0128-1.github.io/noteapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
-    "deploy": "npm run build && gh-pages",
+    "build": "cross-env PUBLIC_URL=/noteapp react-scripts build",
+    "deploy": "npm run build && gh-pages -d build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "cross-env": "^7.0.3",
     "gh-pages": "^5.0.0",
     "react-uuid": "^2.0.0",
     "vite": "^4.1.0"
