@@ -1,6 +1,5 @@
 {
   "name": "noteapp-with-react",
-  "homepage": "https://yuki0128-1.github.io/noteapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
